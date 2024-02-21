@@ -3,8 +3,8 @@ Design Patterns are widely used in our day to day software development without c
  
  This repository holds frequesntly used design patterns coded in C# language.ory method Design 
  The following design patterns is been discussed here:
- - Factory Design Pattern
- - Factory Method Design Pattern *(which overcomes the Open-Closed principal violation from Factory Design Pattern)*
- - Singleton Design Pattern
+ - [Factory Design Pattern](FactoryDesignPattern/README.md)
+ - [Factory Method Design Pattern](FactoryMethodDesignPattern/README.md) *(which overcomes the Open-Closed principal violation from Factory Design Pattern)*
+ - [Singleton Design Pattern](SingletonDesignPattern/README.md)
  - Observer Design Pattern *(which is also known as Pub-Sub model)*
  - Adaptor Design Pattern
