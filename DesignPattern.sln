@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonDesignPattern", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverDesignPattern", "ObserverDesignPattern\ObserverDesignPattern.csproj", "{DB9AC034-4477-4B1A-9FAA-58D16F40CD04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDesignPattern", "AdaptorDesignPattern\AdapterDesignPattern.csproj", "{534256B6-CE08-4E0A-BAF1-EBC2D850B431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDesignPattern", "AdapterDesignPattern\AdapterDesignPattern.csproj", "{534256B6-CE08-4E0A-BAF1-EBC2D850B431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
