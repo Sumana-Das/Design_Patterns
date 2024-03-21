@@ -5,28 +5,28 @@ namespace SingletonDesignPattern
 {
     class Client
     {
-        static void User1(string message)
+        static void User1(string message, string loggerType)
         {
-            LazyLoadingLogger lazyUser1 = LazyLoadingLogger.getLogger();
+            ISingleton lazyUser1 = LoggerFactory.GetLoggerType(loggerType);
             lazyUser1.Log(message);
 
-            EagerLoadingLogger eagerUser1 = EagerLoadingLogger.getLogger();
+            ISingleton eagerUser1 = LoggerFactory.GetLoggerType(loggerType);
             eagerUser1.Log(message);
         }
-        static void User2(string message)
+        static void User2(string message, string loggerType)
         {
-            LazyLoadingLogger lazyUser2 = LazyLoadingLogger.getLogger();
+            ISingleton lazyUser2 = LoggerFactory.GetLoggerType(loggerType);
             lazyUser2.Log(message);
 
-            EagerLoadingLogger eagerUser2 = EagerLoadingLogger.getLogger();
+            ISingleton eagerUser2 = LoggerFactory.GetLoggerType(loggerType);
             eagerUser2.Log(message);
         }
 
         static void Main(string[] args)
         {
             Parallel.Invoke(
-                () => User1("Calling from User 1"),
-                () => User2("Calling from User 2")
+                () => User1("Calling from User 1", "Lazy"),
+                () => User2("Calling from User 2", "Eager")
                 );
             Console.ReadLine();
         }

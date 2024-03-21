@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SingletonDesignPattern
 {
-    class EagerLoadingLogger
+    class EagerLoadingLogger : ISingleton
     {
         static int countInstance = 0;
         static readonly EagerLoadingLogger logger = new EagerLoadingLogger();

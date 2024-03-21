@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SingletonDesignPattern
 {
-    public sealed class LazyLoadingLogger
+    public sealed class LazyLoadingLogger : ISingleton
     {
         static LazyLoadingLogger logger;
         static int countInstance = 0;
