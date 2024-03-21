@@ -6,8 +6,8 @@ namespace FactoryMethodDesignPattern
 {
     public interface ICreditCard
     {
-        void GetCardType();
-        void AccountDetails();
+        void GetOffers();
+        void GetAccountStatement();
         void GetCreditLimit();
     }
 }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace FactoryMethodDesignPattern.ConcreteCreators
 {
-    public class MoneyBackCardFactory : CreditCardFactory
+    public class MoneyBackCardFactory : ICreditCardFactory
     {
-        public override ICreditCard CreateProduct()
+        public ICreditCard CreateProduct()
         {
             return new MoneyBackCard();
         }

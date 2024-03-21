@@ -6,11 +6,11 @@ namespace FactoryDesignPattern
 {
     class PlatinumCard : ICreditCard
     {
-        public void GetCardType()
+        public void GetOffers()
         {
             Console.WriteLine("Platinum Card");
         }
-        public void AccountDetails()
+        public void GetAccountStatement()
         {
             Console.WriteLine("Platinum Account Details");
         }

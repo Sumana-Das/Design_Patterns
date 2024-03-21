@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FactoryMethodDesignPattern
 {
-    public abstract class CreditCardFactory
+    public interface ICreditCardFactory
     {
-        public abstract ICreditCard CreateProduct();
+        public ICreditCard CreateProduct();
     }
 }

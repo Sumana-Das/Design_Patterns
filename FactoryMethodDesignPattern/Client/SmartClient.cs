@@ -7,16 +7,16 @@ namespace FactoryMethodDesignPattern
     {
         static void Main(string[] args)
         {
-            ClientCode(new MoneyBackCardFactory());
-            ClientCode(new PlatinumCardFactory());
+            ClientMethod(new MoneyBackCardFactory());
+            ClientMethod(new PlatinumCardFactory());
         }
-        public static void ClientCode(CreditCardFactory creator)
+        public static void ClientMethod(ICreditCardFactory cardType)
         {
-            ICreditCard cardDetails = creator.CreateProduct();
+            ICreditCard cardDetails = cardType.CreateProduct();
 
-            cardDetails.GetCardType();
+            cardDetails.GetOffers();
             cardDetails.GetCreditLimit();
-            cardDetails.AccountDetails();
+            cardDetails.GetAccountStatement();
         }
     }
 }

@@ -9,15 +9,15 @@ namespace FactoryDesignPattern
             Console.WriteLine("Enter the card type:");
             string cardType = Console.ReadLine();
             
-            ClientCode(cardType);
+            ClientMethod(cardType);
         }
-        public static void ClientCode(string cardType)
+        public static void ClientMethod(string cardType)
         {
             ICreditCard cardDetails = CreditCardFactory.GetCardType(cardType);
 
-            cardDetails.GetCardType();
+            cardDetails.GetOffers();
             cardDetails.GetCreditLimit();
-            cardDetails.AccountDetails();
+            cardDetails.GetAccountStatement();
         }
     }
 }

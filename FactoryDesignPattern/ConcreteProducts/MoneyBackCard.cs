@@ -4,11 +4,11 @@ namespace FactoryDesignPattern
 {
     public class MoneyBackCard : ICreditCard
     {
-        public void GetCardType()
+        public void GetOffers()
         {
             Console.WriteLine("MoneyBackCard Card");
         }
-        public void AccountDetails()
+        public void GetAccountStatement()
         {
             Console.WriteLine("MoneyBackCard Account Details");
         }
